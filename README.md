@@ -20,7 +20,7 @@ $ npm start
   * POST
     * args:
       * name: string, minimum 5 characters, requried
-      * estimatedEndOn : RFC3339 datetime, proposed time at which this item will be closed
+      * estimatedEndOn : RFC3339 datetime, proposed time at which this item will be closed, required
     * response: 
       * newely inserted item
   * GET
