@@ -23,18 +23,18 @@ $ npm start
 * /api/v1/item
   * POST
     * args:
-      * name: string, minimum 5 characters, requried
-      * estimatedEndOn : RFC3339 datetime, proposed time at which this item will be closed, required
+      * item[name]: string, minimum 5 characters, requried
+      * item[estimatedEndOn] : RFC3339 datetime, proposed time at which this item will be closed, required
     * response: 
       * newely inserted item
   * GET
     * response:
-      *list of items
+      * list of items
 
 * /api/v1/item/:id
   * PATCH
     * args:
-      * status: string, oneof(['added', 'started', 'ended', 'rejected'])
+      * item[status]: string, oneof(['added', 'started', 'ended', 'rejected'])
     * response:
       * edited item
   * GET
