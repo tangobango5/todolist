@@ -2,6 +2,10 @@
 
 > React assignment
 
+## Requirement
+* node >=7.0.0
+* npm  >=3.10.8
+
 ## Installation
 
 ```sh
