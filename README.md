@@ -4,13 +4,13 @@
 
 ## Question Description
 Create a Todo list using react / redux / react-router. Your app should have below mentioned functionality.
-* Adding a new item with name and estimated time at which this item gets completed.
-* Start working on a particular item. This marks the time at which a particular items gets started.
+* Add a new item with name and estimated time at which this item will be completed.
+* Start working on a particular item. This marks the time at which a particular items is started.
 * Finish a particular item. This marks end time of that item. It can be greater or less than the estimated timestamp.
 
 ## Tasks:
-1) User land on home page i.e. "/" <br />
-	Show all items in a list format with below mentioned details:
+1) User lands on the home page i.e. "/" <br />
+	Show all items in a table format with below mentioned details:
 	- Name
 	- estimated timestamp
 	- start time
@@ -20,10 +20,12 @@ Create a Todo list using react / redux / react-router. Your app should have belo
 	- start button
 	- end button
 
-	Finished items will appear at the bottom of the list with a darker backgroud.
+	Finished items will appear at the bottom of the table with a different backgroud color.
 	Keep updating the list in every 10 seconds.
 
 2) At the bottom of the list there should be an "Add new" button. That takes the user to the /add-item route which shows "name","time" fields and a submit button. On successfull submission show a success message and take the user back to the list.
+
+3) At the top right corner of the home page show overall deviation(sum of deviation of all finished items).
 
 * Do rely on your intuition on the values of the fields, if its not present. <br />
 	Eg: Show nothing(empty string) at the place of start button or disabled button if that particular item is already started. Do consider cases like these for all other fields.
@@ -31,7 +33,8 @@ Create a Todo list using react / redux / react-router. Your app should have belo
 ## Backend Api
 * Clone this repository, install it and start the server for backend apis of this todolist. By default server will look for an empty port starting from 3000. If server finds that port busy then it will look for 3001 and so on till it finds an unused port.
 Suppose server starts at port 3001. Then your host is http://localhost:3001.
-* If you wish to change to a custom port then start stop the server and start again by sending it the desired port as an environment variable like below.
+* This server stores the data in memory. So whenever you stop the server data gets lost.
+* If you wish to change to a custom port then stop the server and start again by sending it the desired port as an environment variable like below.
 ```sh
 $ PORT=8080 npm start
 ```
